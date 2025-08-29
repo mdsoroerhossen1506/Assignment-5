@@ -12,7 +12,8 @@ for (let icon of heartIcons) {
 }
 
 
-// copy button 
+                            // button copy 
+
 let copyCount = parseInt(document.getElementById('copy-count').innerText); 
 let buttons = document.querySelectorAll('.flex1');
 
@@ -32,7 +33,7 @@ for (let button of buttons) {
 
 
 
-// calling button 
+                            // calling button 
 let coinCount = parseInt(document.getElementById('coin-count').innerText);  
 let callButtons = document.querySelectorAll('.btn-call');
 
