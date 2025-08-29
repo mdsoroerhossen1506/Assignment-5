@@ -1,38 +1,30 @@
-Qeustion: What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-Answer: Defference between getElementById, getElementsByClassName and querySelector
+প্রশ্ন: getElementById, getElementsByClassName, এবং querySelector / querySelectorAll এর মধ্যে পার্থক্য কী?
 
-getElementById select only one element from the document if dosen't match any element return null;
+উত্তর: getElementById, getElementsByClassName এবং querySelector এর মধ্যে পার্থক্য
 
-getElementsByClassName select multiple element from the document and it will be return array type object;
+getElementById ডকুমেন্ট থেকে শুধুমাত্র একটি উপাদান নির্বাচন করে যদি কোনও উপাদানের সাথে মেলে না, তাহলে null ফেরত পাঠান;
 
-querySelector select multiple document but special facility it can do select using css class as like .className or #IdName (sample)
+getElementsByClassName ডকুমেন্ট থেকে একাধিক উপাদান নির্বাচন করে এবং এটি রিটার্ন অ্যারে টাইপ অবজেক্ট হবে;
 
+querySelector একাধিক ডকুমেন্ট নির্বাচন করে কিন্তু বিশেষ সুবিধা এটি .className বা #IdName (নমুনা) এর মতো css ক্লাস ব্যবহার করে নির্বাচন করতে পারে
 
+প্রশ্ন: আপনি কীভাবে DOM-এ একটি নতুন উপাদান তৈরি এবং সন্নিবেশ করবেন?
 
-Question: How do you create and insert a new element into the DOM?
+উত্তর: একটি নতুন উপাদান তৈরি এবং সন্নিবেশ করতে আমাদের প্রথমে amathod কল করতে হবে সেই document.createElement() তারপর সেট অ্যাট্রিবিউট, clss, id ইত্যাদি এবং কমপক্ষে আমাদের appendChild(), insertBefore() বা অন্য কোনও সেটআপ উপস্থিত করতে হবে।
 
-Answer: To create and insert a new element we first need to call amathod that document.createElement() then set attribute, clss, id etc and atleast we need to appear appendChild(), insertBefore() or another setup.
+প্রশ্ন: ইভেন্ট বাবলিং কী এবং এটি কীভাবে কাজ করে?
 
+উত্তর: ইভেন্ট বাবলিং হল DOM-এর একটি প্রক্রিয়া এবং এটি কাজ করবে। উদাহরণস্বরূপ, যদি আপনি একটি div-এর ভিতরে একটি বোতামে ক্লিক করেন, তাহলে ক্লিক ইভেন্টটি প্রথমে বোতামে ট্রিগার হবে, তারপর প্যারেন্ট ডিভ-এ বুদবুদ হবে, এবং যদি উচ্চতর প্যারেন্ট উপাদান থাকে, তবে এটি বুদবুদ হতে থাকবে।
 
-Question: What is Event Bubbling and how does it work?
+প্রশ্ন: জাভাস্ক্রিপ্টে ইভেন্ট ডেলিগেশন কী? এটি কেন কার্যকর?
 
-Answer: Event Bubbling is a mechanism in the DOM and it will work For example, if you click a button inside a div, the click event will first trigger on the button, then bubble up to the parent div, and if there are higher parent elements, it will continue bubbling up.
+উত্তর: ইভেন্ট ডেলিগেশন হল এমন একটি প্রক্রিয়া যা প্যারেন্ট এবং কনট্রোল-এর উপর একটি হ্যান্ডেলার যোগ করে যা এটি দ্রুত কাজ করে।
 
+প্রশ্ন: preventDefault() এবং stopPropagation() পদ্ধতির মধ্যে পার্থক্য কী?
 
-Question: What is Event Delegation in JavaScript? Why is it useful?
+preventDefault() এবং stopPropagation() পদ্ধতির মধ্যে পার্থক্য;
 
-Answer: Event Delegration is a mechanism that add a handeler on parent and contorl thir child element it work on dinamicly.
+preventDefault() হল এমন একটি পদ্ধতি যা ডিফল্ট অ্যাকশন বন্ধ করে
 
+stopPropagation হল এমন একটি পদ্ধতি যা ক্যাপচার বন্ধ করে
 
-
-Question: What is the difference between preventDefault() and stopPropagation() methods?
-
-Difference between preventDefault() and stopPropagation() methods;
-
-preventDefault() is a method that stop default action
-
-stopPropagation is a method that stop capturing 
-
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Complete<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
